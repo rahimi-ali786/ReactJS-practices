@@ -12,9 +12,11 @@ export class Product extends Component{
         <>
           <span className='m-2 text-info'>Product </span>
           <span className='m-2 badge bg-primary'>{this.format(this.count)}</span>
-          <button className='m-2 btn btn-s btn-success'>+</button>
-          <button className='m-2 btn btn-s btn-warning'>-</button>
-          <button className='m-2 btn btn-s btn-danger'>Delete</button>
+          {/* <button onClick={this.handleIncrement.bind(this)} className='m-2 btn btn-s btn-success'>+</button> */}
+          <button onClick={this.handleIncrement} className='m-2 btn btn-s btn-success'>+</button>
+          <button onClick={this.handleDecrement} className='m-2 btn btn-s btn-warning'>-</button>
+          <button onClick={this.handleDelete} className='m-2 btn btn-s btn-danger'>Delete</button>
+          {/* <button onClick={()=>{this.handleDelete(222)}} className='m-2 btn btn-s btn-danger'>Delete</button> */}
           {/* <img src={this.imageURL} style={{borderRadius: '50%'}} alt=""/> */}
           <img src={this.imageURL} alt=""/>
           <ul>
@@ -27,4 +29,24 @@ export class Product extends Component{
     format(count){
       return count === 0 ? 'Zero' : count;
     }
+    // Die Methode this.handleIncrement.bind(this) erstellt eine neue Funktion, bei der das Schlüsselwort this immer auf die aktuelle Instanz der Klasse (deine React-Komponente) zeigt.
+    // handleIncrement(){
+    //   console.log('increment',this);
+    // }
+
+    handleIncrement = () =>{
+      console.log('increment', this);
+    }
+    handleDecrement(){
+      console.log('decrement');
+    }
+     handleDelete(){
+      console.log('delete');
+    }
+    // handleDelete(itemNumber){
+    //   console.log(itemNumber);
+    // }
+   
+
+
 }
