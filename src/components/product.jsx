@@ -46,7 +46,6 @@ export class Product extends Component{
     // handleDelete(itemNumber){
     //   console.log(itemNumber);
     // }
-   
-
-
 }
+
+export default Product;
