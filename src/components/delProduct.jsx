@@ -1,0 +1,40 @@
+import { Component } from 'react';
+
+  class DelProduct extends Component{
+    state = {
+       count: this.props.count
+    }
+    
+    render() {
+     const {productName} = this.props;
+     return (
+        <div>
+          <span className='m-2 text-info'>{productName}</span>
+          <span className='m-2 badge bg-primary'>{this.format(this.state.count)}</span>
+          <button onClick={this.handleIncrement} className='m-2 btn btn-s btn-success'>+</button>
+          <button onClick={this.handleDecrement} className='m-2 btn btn-s btn-warning'>-</button>
+          <button onClick={this.handleDelete} className='m-2 btn btn-s btn-danger'>Delete</button>
+          {this.props.children}
+        </div>
+     );
+    }
+   
+   
+    handleIncrement = () =>{
+       const {count} = this.state;
+       this.setState({count: count +1});
+    }
+    handleDecrement = () =>{
+       // object destructuring 
+       const {count} = this.state;
+       this.setState({count: count -1});
+    }
+     handleDelete = () => {
+      this.props.onDelete(this.props.id);
+    }
+     format(){
+      return this.state.count === 0 ? 'Zero' : this.state.count;
+    }
+}
+
+export default DelProduct;

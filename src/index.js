@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import {StatelessProduct} from './components/functional/statelessProduct';
 // import PropsProducts from './components/propsProducts';
 // import MapFProducts from './components/functional/mapFProducts';
-import MapProducts from './components/mapProducts';
+// import MapProducts from './components/mapProducts';
+// import DelProducts from './components/delProducts';
+import DelFProducts from './components/functional/delFProducts';
 
 
 
 const root = createRoot(document.getElementById('root')); 
-root.render(<MapProducts />);
+root.render(<DelFProducts />);
