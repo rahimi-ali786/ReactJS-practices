@@ -8,9 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import MapFProducts from './components/functional/mapFProducts';
 // import MapProducts from './components/mapProducts';
 // import DelProducts from './components/delProducts';
-import DelFProducts from './components/functional/delFProducts';
-
-
+// import DelFProducts from './components/functional/delFProducts';
+// import ControlledProducts from './components/controlledProducts';
+import ControlledFProducts from './components/functional/controlledFProducts';
 
 const root = createRoot(document.getElementById('root')); 
-root.render(<DelFProducts />);
+root.render(<ControlledFProducts />);
