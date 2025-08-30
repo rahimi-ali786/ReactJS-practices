@@ -1,5 +1,6 @@
 import {createRoot} from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AppF from './components/functional/appF';
 // import App from './app';
 // import {Product} from './components/product';
 // import {StateProduct} from './components/stateProduct';
@@ -10,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import DelProducts from './components/delProducts';
 // import DelFProducts from './components/functional/delFProducts';
 // import ControlledProducts from './components/controlledProducts';
-import ControlledFProducts from './components/functional/controlledFProducts';
+// import ControlledFProducts from './components/functional/controlledFProducts';
 
 const root = createRoot(document.getElementById('root')); 
-root.render(<ControlledFProducts />);
+root.render(<AppF />);
