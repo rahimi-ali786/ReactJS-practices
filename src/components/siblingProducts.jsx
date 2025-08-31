@@ -18,8 +18,6 @@ class SiblingProducts extends Component {
        </>
   );
  }
-
- 
 }
  
 export default SiblingProducts;
