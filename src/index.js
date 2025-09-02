@@ -1,7 +1,9 @@
 import {createRoot} from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AppMount from './appMount';
+import AppUnmount from './appUnmount';
 
+// import AppUpdate from './appUpdate';
+// import AppMount from './appMount';
 // import AppFC from './components/functional/appFC';
 // import AppC from './appC';
 // import App from './app';
@@ -18,4 +20,4 @@ import AppMount from './appMount';
 // import ControlledFProducts from './components/functional/controlledFProducts';
 
 const root = createRoot(document.getElementById('root')); 
-root.render(<AppMount />);
+root.render(<AppUnmount />);
